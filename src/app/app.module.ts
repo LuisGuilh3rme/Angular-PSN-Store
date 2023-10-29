@@ -8,6 +8,7 @@ import { MenuBarComponent } from './shared/menu-bar/menu-bar.component';
 import { TopBarComponent } from './shared/menu-bar/top-bar/top-bar.component';
 import { SideBarComponent } from './shared/menu-bar/side-bar/side-bar.component';
 import { MainProductComponent } from './components/main-product/main-product.component';
+import { GameCardComponent } from './shared/game-card/game-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,8 @@ import { MainProductComponent } from './components/main-product/main-product.com
     MenuBarComponent,
     TopBarComponent,
     SideBarComponent,
-    MainProductComponent
+    MainProductComponent,
+    GameCardComponent
   ],
   imports: [
     BrowserModule,
