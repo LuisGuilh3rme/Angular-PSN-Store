@@ -7,13 +7,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuBarComponent } from './shared/menu-bar/menu-bar.component';
 import { TopBarComponent } from './shared/menu-bar/top-bar/top-bar.component';
 import { SideBarComponent } from './shared/menu-bar/side-bar/side-bar.component';
+import { MainProductComponent } from './components/main-product/main-product.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     MenuBarComponent,
     TopBarComponent,
-    SideBarComponent
+    SideBarComponent,
+    MainProductComponent
   ],
   imports: [
     BrowserModule,
