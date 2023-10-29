@@ -1,0 +1,6 @@
+.menu-bar {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}

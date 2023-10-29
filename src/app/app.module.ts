@@ -4,9 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
-import { TopBarComponent } from './components/menu-bar/top-bar/top-bar.component';
-import { SideBarComponent } from './components/menu-bar/side-bar/side-bar.component';
+import { MenuBarComponent } from './shared/menu-bar/menu-bar.component';
+import { TopBarComponent } from './shared/menu-bar/top-bar/top-bar.component';
+import { SideBarComponent } from './shared/menu-bar/side-bar/side-bar.component';
 @NgModule({
   declarations: [
     AppComponent,

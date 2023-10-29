@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-blue: #004c8a;
+  --primary-black: #000000;
+  --primary-white: #ffffff;
+  --decoration-black: #757575;
+  --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  font-family: var(--primary-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+
+  :focus {
+    outline: revert;
+  }
+}

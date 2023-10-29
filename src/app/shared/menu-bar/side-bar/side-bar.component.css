@@ -1,0 +1,41 @@
+.side-bar {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 17px;
+
+  .side-bar-logo {
+    width: 140px;
+
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .side-bar-items {
+    margin: 0 auto;
+    display: flex;
+
+    .side-bar-items-item {
+      margin: 0 4px;
+      font-weight: 600;
+      border-radius: 20px;
+
+      > button {
+        padding: 2px 8px;
+      }
+
+      :hover {
+        cursor: pointer;
+        border-radius: 20px;
+        transition: background-color 250ms ease-in;
+        background-color: #CED5DA;
+      }
+    }
+  }
+}
+
+.activated {
+  background-color: #EBEEF0;
+}
