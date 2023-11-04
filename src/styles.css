@@ -25,3 +25,7 @@ button {
     outline: revert;
   }
 }
+
+li {
+  list-style: none;
+}

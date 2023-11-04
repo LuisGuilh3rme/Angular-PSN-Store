@@ -1,0 +1,25 @@
+.game-card-cover {
+  position: relative;
+  width: 410px;
+  height: 410px;
+  border-radius: 2%;
+  overflow: hidden;
+
+  > img {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  &:hover:before {
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.1;
+    background-color: var(--primary-black);
+  }
+}
