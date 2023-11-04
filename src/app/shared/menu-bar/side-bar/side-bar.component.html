@@ -5,12 +5,14 @@
   <div class="side-bar-items">
     <div class="side-bar-items-item"
       [routerLink]="['']"
-      [routerLinkActive]="['activated']">
+      [routerLinkActive]="['activated']"
+      [routerLinkActiveOptions]="{exact: true}">
       <button>Novidades</button>
     </div>
     <div class="side-bar-items-item"
-      [routerLink]="['']"
-      [routerLinkActive]="['activated']">
+      [routerLink]="['browse']"
+      [routerLinkActive]="['activated']"
+      [routerLinkActiveOptions]="{exact: true}">
       <button>Navegar</button>
     </div>
   </div>

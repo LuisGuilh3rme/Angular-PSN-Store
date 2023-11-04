@@ -9,6 +9,7 @@ import { TopBarComponent } from './shared/menu-bar/top-bar/top-bar.component';
 import { SideBarComponent } from './shared/menu-bar/side-bar/side-bar.component';
 import { MainProductComponent } from './components/main-product/main-product.component';
 import { GameCardComponent } from './shared/game-card/game-card.component';
+import { BrowseComponent } from './pages/browse/browse.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { GameCardComponent } from './shared/game-card/game-card.component';
     TopBarComponent,
     SideBarComponent,
     MainProductComponent,
-    GameCardComponent
+    GameCardComponent,
+    BrowseComponent
   ],
   imports: [
     BrowserModule,
