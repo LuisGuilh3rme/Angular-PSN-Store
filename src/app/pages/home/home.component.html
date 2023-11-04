@@ -2,23 +2,8 @@
   <app-main-product></app-main-product>
   <div class="home-games">
     <ul>
-      <li>
-        <app-game-card></app-game-card>
-      </li>
-      <li>
-        <app-game-card></app-game-card>
-      </li>
-      <li>
-        <app-game-card></app-game-card>
-      </li>
-      <li>
-        <app-game-card></app-game-card>
-      </li>
-      <li>
-        <app-game-card></app-game-card>
-      </li>
-      <li>
-        <app-game-card></app-game-card>
+      <li *ngFor="let game of games">
+        <app-game-card imageSrc="{{ game.imageUrl }}"></app-game-card>
       </li>
     </ul>
   </div>

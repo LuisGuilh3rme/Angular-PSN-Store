@@ -1,55 +1,11 @@
 <div class="browse">
   <h1>Todos os jogos</h1>
-  <span>12 itens</span>
+  <span>{{ games.length }} itens</span>
   <div class="browse-games">
     <ul>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
-      </li>
-      <li>
-        <app-game-card [width]="200" [height]="200"></app-game-card>
-        <p>Game name</p>
+      <li *ngFor="let game of games">
+        <app-game-card [width]="200" [height]="200" imageSrc="{{ game.imageUrl }}"></app-game-card>
+        <p>{{ game.title }}</p>
       </li>
     </ul>
   </div>
