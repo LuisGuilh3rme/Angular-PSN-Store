@@ -7,10 +7,19 @@
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
 
   .main-product-cover {
+    position: relative;
     margin-top: 40px;
     width: 100%;
     height: 390px;
     overflow: hidden;
+
+    > h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
 
     > img {
       width: 100%;
