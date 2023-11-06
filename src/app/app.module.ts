@@ -10,6 +10,7 @@ import { SideBarComponent } from './shared/menu-bar/side-bar/side-bar.component'
 import { MainProductComponent } from './components/main-product/main-product.component';
 import { GameCardComponent } from './shared/game-card/game-card.component';
 import { BrowseComponent } from './pages/browse/browse.component';
+import { GameCardModalComponent } from './shared/game-card/game-card-modal/game-card-modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { BrowseComponent } from './pages/browse/browse.component';
     SideBarComponent,
     MainProductComponent,
     GameCardComponent,
-    BrowseComponent
+    BrowseComponent,
+    GameCardModalComponent
   ],
   imports: [
     BrowserModule,
