@@ -4,7 +4,7 @@ export const GameData: GameDataInterface[] = [
   {
     id: 1,
     title: "Call of Duty",
-    tags: [tag.game],
+    tags: [tag.game, tag.online],
     imageUrl: "assets/games/call_of_duty.webp"
   },
   {
@@ -58,13 +58,13 @@ export const GameData: GameDataInterface[] = [
   {
     id: 10,
     title: "Gothan Knights",
-    tags: [tag.game],
+    tags: [tag.game, tag.online],
     imageUrl: "assets/games/gothan_knights.jfif"
   },
   {
     id: 11,
     title: "Fortnite",
-    tags: [tag.game],
+    tags: [tag.game, tag.online],
     imageUrl: "assets/games/fortnite.webp"
   },
   {
@@ -76,13 +76,13 @@ export const GameData: GameDataInterface[] = [
   {
     id: 13,
     title: "Assassin's Creed Valhalla",
-    tags: [tag.game, tag.exclusive],
+    tags: [tag.game],
     imageUrl: "assets/games/ac_valhalla.webp"
   },
   {
     id: 14,
     title: "Destiny 2",
-    tags: [tag.game, tag.exclusive],
+    tags: [tag.game, tag.online],
     imageUrl: "assets/games/destiny_2.webp"
   },
 ]

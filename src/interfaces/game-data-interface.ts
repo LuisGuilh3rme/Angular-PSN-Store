@@ -1,8 +1,9 @@
 export enum tag {
-  exclusive = 1,
-  game = 2,
-  remake = 3,
-  remaster = 4
+  exclusive = "exclusive",
+  game = "game",
+  remake = "remake",
+  remaster = "remaster",
+  online = "online"
 }
 
 export type GameDataInterface = {
