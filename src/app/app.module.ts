@@ -11,6 +11,7 @@ import { MainProductComponent } from './components/main-product/main-product.com
 import { GameCardComponent } from './shared/game-card/game-card.component';
 import { BrowseComponent } from './pages/browse/browse.component';
 import { GameCardModalComponent } from './shared/game-card/game-card-modal/game-card-modal.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { GameCardModalComponent } from './shared/game-card/game-card-modal/game-
     MainProductComponent,
     GameCardComponent,
     BrowseComponent,
-    GameCardModalComponent
+    GameCardModalComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
