@@ -1,1 +1,18 @@
-<p>game-card-modal works!</p>
+<ng-container *ngIf="showModal">
+  <div class="game-card-modal-content">
+    <div class="game-card-modal-content-cover">
+      <img src="{{ game?.imageUrl }}" alt="{{ game?.title }} cover" />
+    </div>
+    <div class="game-card-modal-content-description">
+      <h1>{{ game?.title }}</h1>
+      <div class="game-card-modal-content-description-tags">
+        <span *ngFor="let tag of game?.tags">{{ tag.toLocaleUpperCase() }}</span>
+      </div>
+    </div>
+    <div class="game-card-modal-content-buttons">
+      <button (click)="closeModal()">Cancelar</button>
+      <button (click)="closeModal()">Comprar</button>
+    </div>
+  </div>
+  <div class="overlay"></div>
+</ng-container>

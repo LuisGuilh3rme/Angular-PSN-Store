@@ -1,3 +1,4 @@
-<div class="game-card-cover" [style.width.px]="width" [style.height.px]="height">
-  <img rawSrc="imageSrc" src="{{ imageSrc || 'https://source.unsplash.com/random/{{width}}x{{height}}'}}" alt="game cover">
+<div class="game-card-cover" [style.width.px]="width" [style.height.px]="height" (click)="openModal()">
+  <img rawSrc="imageSrc" src="{{ this.game?.imageUrl }}" alt="game cover">
+  <app-game-card-modal [showModal]="showModal" [game]="this.game" > </app-game-card-modal>
 </div>
