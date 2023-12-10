@@ -1,0 +1,18 @@
+<ng-container *ngIf="showDropdown">
+  <div class="top-bar-dropdown">
+    <div class="top-bar-dropdown-items">
+      <a class="top-bar-dropdown-item" [routerLink]="['/not-found']" (click)="showDropdown = false">
+        <img width="80" height="80" src="assets/sales_icon.svg" alt="playstation sales icon" />
+        <span>Ofertas</span>
+      </a>
+      <a class="top-bar-dropdown-item" [routerLink]="['/not-found']" (click)="showDropdown = false">
+        <img width="80" height="80" src="assets/game_catalog_icon.svg" alt="playstation game catalog icon" />
+        <span>Catalogo de jogos</span>
+      </a>
+      <a class="top-bar-dropdown-item" [routerLink]="['/not-found']" (click)="showDropdown = false">
+        <img width="80" height="80" src="assets/ps_plus_icon.svg" alt="playstation plus icon" />
+        <span>PS Plus</span>
+      </a>
+    </div>
+  </div>
+</ng-container>

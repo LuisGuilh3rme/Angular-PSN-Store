@@ -19,7 +19,6 @@ export class GameCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.game = GameData.find(game => game.id == this.gameId);
-    console.log(this.game);
   }
 
   public openModal() {
