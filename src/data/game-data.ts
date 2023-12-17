@@ -1,4 +1,5 @@
-import { GameDataInterface, tag } from "src/interfaces/game-data-interface"
+import { tag } from "src/enums/tag-enum"
+import { GameDataInterface } from "src/interfaces/game-data-interface"
 
 export const GameData: GameDataInterface[] = [
   {

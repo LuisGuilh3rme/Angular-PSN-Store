@@ -1,7 +1,4 @@
-export enum menuType {
-  games = "games",
-  support = "support"
-}
+import { menuType } from "src/enums/menu-type-enum"
 
 export type MenuDataInterface = {
   id: number,

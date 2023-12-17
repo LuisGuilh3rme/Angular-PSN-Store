@@ -1,7 +1,7 @@
 import { Component, Input, OnInit} from '@angular/core';
 import { MenuData } from 'src/data/menu-data';
+import { menuType } from 'src/enums/menu-type-enum';
 import { MenuDataInterface } from 'src/interfaces/menu-data-interface';
-import { menuType } from 'src/interfaces/menu-data-interface';
 
 @Component({
   selector: 'app-top-bar-dropdown',

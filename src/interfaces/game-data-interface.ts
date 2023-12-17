@@ -1,10 +1,4 @@
-export enum tag {
-  exclusive = "exclusive",
-  game = "game",
-  remake = "remake",
-  remaster = "remaster",
-  online = "online"
-}
+import { tag } from "src/enums/tag-enum"
 
 export type GameDataInterface = {
   id: number,

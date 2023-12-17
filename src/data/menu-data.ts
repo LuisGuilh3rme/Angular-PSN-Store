@@ -1,4 +1,5 @@
-import { MenuDataInterface, menuType } from "src/interfaces/menu-data-interface";
+import { menuType } from "src/enums/menu-type-enum";
+import { MenuDataInterface } from "src/interfaces/menu-data-interface";
 
 export const MenuData: MenuDataInterface[] = [
   {

@@ -1,5 +1,5 @@
 import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
-import { menuType } from 'src/interfaces/menu-data-interface';
+import { menuType } from 'src/enums/menu-type-enum';
 
 @Component({
   selector: 'app-top-bar',
