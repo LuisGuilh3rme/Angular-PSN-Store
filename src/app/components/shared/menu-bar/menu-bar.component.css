@@ -1,10 +1,16 @@
 .menu-bar {
+  display: flex;
+  flex-direction: column;
+
+  .menu-bar-tools {
+    background-color: var(--primary-white);
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+
+.menu-bar-fixed {
   z-index: 999;
   position: fixed;
-  display: flex;
   width: 100%;
-  flex-direction: column;
-  background-color: var(--primary-white);
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.12);
 }
