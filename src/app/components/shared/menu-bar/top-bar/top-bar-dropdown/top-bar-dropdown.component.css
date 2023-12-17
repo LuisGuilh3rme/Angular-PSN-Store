@@ -1,13 +1,13 @@
 .top-bar-dropdown {
   position: absolute;
+  z-index: 1000;
+  top: 40px;
+  left: 0;
+  width: 100vw;
+  height: 224px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 224px;
-  top: 40px;
-  left: 0;
-  z-index: 1000;
   background-color: var(--primary-white);
   -webkit-box-shadow: 0 11px 4px 0 rgba(0,0,0,.3);
   box-shadow: 0 11px 4px 0 rgba(0,0,0,.3);
@@ -15,14 +15,13 @@
 
   .top-bar-dropdown-items {
     display: flex;
-    justify-content: center;
-    width: 20%;
 
     .top-bar-dropdown-item {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin: 0 10px;
       width: 140px;
       height: 128px;
       cursor: pointer;

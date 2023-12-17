@@ -13,6 +13,7 @@ import { BrowseComponent } from './components//pages/browse/browse.component';
 import { GameCardModalComponent } from './components/shared/game-card/game-card-modal/game-card-modal.component';
 import { NotFoundComponent } from './components/pages/not-found/not-found.component';
 import { TopBarDropdownComponent } from './components/shared/menu-bar/top-bar/top-bar-dropdown/top-bar-dropdown.component';
+import { HeaderBarComponent } from './components/shared/menu-bar/header-bar/header-bar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { TopBarDropdownComponent } from './components/shared/menu-bar/top-bar/to
     BrowseComponent,
     GameCardModalComponent,
     NotFoundComponent,
-    TopBarDropdownComponent
+    TopBarDropdownComponent,
+    HeaderBarComponent
   ],
   imports: [
     BrowserModule,

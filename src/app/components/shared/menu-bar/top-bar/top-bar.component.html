@@ -1,30 +1,27 @@
 <div class="top-bar">
-  <div class="top-bar-logo">
-    <span><img src="assets/icons/menu/sony_logo.svg" alt="sony logo" width="75" height="36" /></span>
-  </div>
-  <div class="top-bar-items">
+  <div class="top-bar-left">
     <a [routerLink]="['']">
       <img src="assets/icons/menu/playstation_logo.svg" alt="playstation logo" width="28" height="28" />
     </a>
-    <div class="top-bar-items-nav">
-      <div class="top-bar-items-nav-item" #dropdownGameMenu>
+    <div class="top-bar-left-nav">
+      <div class="top-bar-left-nav-item" #dropdownGameMenu>
         <button>Jogos</button>
         <span>></span>
         <app-top-bar-dropdown *ngIf="showDropdown[0]" [menuItemType]="menuType.games"></app-top-bar-dropdown>
       </div>
-      <div class="top-bar-items-nav-item" #dropdownSupportMenu>
+      <div class="top-bar-left-nav-item" #dropdownSupportMenu>
         <button>Contato</button>
         <span>></span>
         <app-top-bar-dropdown *ngIf="showDropdown[1]" [menuItemType]="menuType.support"></app-top-bar-dropdown>
       </div>
     </div>
-    <div class="top-bar-items-tools">
-      <div class="top-bar-items-tools-account">
-        <button>Iniciar sessão</button>
-      </div>
-      <div class="top-bar-items-tools-search">
-        <button><img src="assets/icons/menu/search_icon.svg" alt="search icon" width="21" height="21" /></button>
-      </div>
+  </div>
+  <div class="top-bar-right">
+    <div class="top-bar-right-account">
+      <button>Iniciar sessão</button>
+    </div>
+    <div class="top-bar-right-search">
+      <button><img src="assets/icons/menu/search_icon.svg" alt="search icon" width="21" height="21" /></button>
     </div>
   </div>
 </div>

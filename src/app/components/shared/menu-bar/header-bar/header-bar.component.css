@@ -1,0 +1,15 @@
+.header-bar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  height: 36px;
+  background-color: var(--primary-black);
+
+  > span {
+    margin: 0 8px;
+
+    > img  {
+      color: var(--primary-white);
+    }
+  }
+}

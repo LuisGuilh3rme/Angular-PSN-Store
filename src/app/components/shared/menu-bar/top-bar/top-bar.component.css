@@ -1,37 +1,21 @@
 .top-bar {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 17px;
+  height: 40px;
+  background-color: var(--primary-white);
 
-  .top-bar-logo {
+  .top-bar-left {
     display: flex;
-    justify-content: flex-end;
-    height: 36px;
-    background-color: var(--primary-black);
 
-    > span {
-      margin: 0 8px;
-
-      > img  {
-        color: var(--primary-white);
-      }
-    }
-  }
-
-  .top-bar-items {
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding: 0 17px;
-    height: 40px;
-    background-color: var(--primary-white);
-
-    .top-bar-items-nav {
+    .top-bar-left-nav {
       display: flex;
       align-items: center;
       margin: 0 8px;
 
-      .top-bar-items-nav-item {
+      .top-bar-left-nav-item {
         font-size: 12px;
         margin: 0 4px;
         color: var(--decoration-black);
@@ -53,37 +37,35 @@
         }
       }
     }
+  }
 
-    .top-bar-items-tools {
-      position: absolute;
-      display: flex;
-      right: 17px;
+  .top-bar-right {
+    display: flex;
 
-      .top-bar-items-tools-account {
-        margin: auto;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 20px;
-        color: var(--primary-white);
-        background-color: #0070cc;
+    .top-bar-right-account {
+      margin: auto;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 20px;
+      color: var(--primary-white);
+      background-color: #0070cc;
 
-        > button {
-          padding: 0 6px;
-        }
-
-        :hover {
-          cursor: pointer;
-          border-radius: 20px;
-          background-color: var(--primary-blue);
-        }
+      > button {
+        padding: 0 6px;
       }
 
-      .top-bar-items-tools-search {
-        margin-left: 14px;
+      :hover {
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: var(--primary-blue);
+      }
+    }
 
-        :hover {
-          cursor: pointer;
-        }
+    .top-bar-right-search {
+      margin-left: 14px;
+
+      :hover {
+        cursor: pointer;
       }
     }
   }
