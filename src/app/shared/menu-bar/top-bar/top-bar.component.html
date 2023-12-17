@@ -5,10 +5,10 @@
   <div class="top-bar-items">
     <span><img src="assets/playstation_logo.svg" alt="playstation logo" width="28" height="28" /></span>
     <div class="top-bar-items-nav">
-      <div class="top-bar-items-nav-item" (click)="openDropdown()">
+      <div class="top-bar-items-nav-item" #dropdownGameMenu>
         <button>Jogos</button>
         <span>></span>
-        <app-top-bar-dropdown [showDropdown]="showDropdown"></app-top-bar-dropdown>
+        <app-top-bar-dropdown *ngIf="showDropdown" [menuItemType]="menuType.games"></app-top-bar-dropdown>
       </div>
       <div class="top-bar-items-nav-item">
         <button>Contato</button>

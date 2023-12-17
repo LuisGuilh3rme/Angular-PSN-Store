@@ -1,4 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
+import { MenuData } from 'src/data/menu-data';
+import { MenuDataInterface } from 'src/interfaces/menu-data-interface';
+import { menuType } from 'src/interfaces/menu-data-interface';
 
 @Component({
   selector: 'app-top-bar-dropdown',
@@ -6,9 +9,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./top-bar-dropdown.component.css']
 })
 export class TopBarDropdownComponent implements OnInit {
-  @Input() public showDropdown! : boolean;
+  @Input() public menuItemType?: menuType;
+  public menuItems?: MenuDataInterface[];
   constructor() { }
 
   ngOnInit(): void {
+    this.menuItems = MenuData.filter(item => item.menuType == this.menuItemType);
   }
 }

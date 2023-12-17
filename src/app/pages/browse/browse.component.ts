@@ -12,7 +12,6 @@ export class BrowseComponent implements OnInit, OnDestroy {
 
   constructor() {
     this.games = GameData;
-    console.log(this.games.length);
   }
 
   ngOnInit(): void {
