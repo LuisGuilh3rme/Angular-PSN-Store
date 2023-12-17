@@ -8,11 +8,12 @@
       <div class="top-bar-items-nav-item" #dropdownGameMenu>
         <button>Jogos</button>
         <span>></span>
-        <app-top-bar-dropdown *ngIf="showDropdown" [menuItemType]="menuType.games"></app-top-bar-dropdown>
+        <app-top-bar-dropdown *ngIf="showDropdown[0]" [menuItemType]="menuType.games"></app-top-bar-dropdown>
       </div>
-      <div class="top-bar-items-nav-item">
+      <div class="top-bar-items-nav-item" #dropdownSupportMenu>
         <button>Contato</button>
         <span>></span>
+        <app-top-bar-dropdown *ngIf="showDropdown[1]" [menuItemType]="menuType.support"></app-top-bar-dropdown>
       </div>
     </div>
     <div class="top-bar-items-tools">

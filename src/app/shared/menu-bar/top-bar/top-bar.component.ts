@@ -8,8 +8,9 @@ import { menuType } from 'src/interfaces/menu-data-interface';
 })
 export class TopBarComponent implements OnInit {
   @ViewChild('dropdownGameMenu') private dropdownGameMenu?: ElementRef;
+  @ViewChild('dropdownSupportMenu') private dropdownSupportMenu?: ElementRef;
 
-  public showDropdown: boolean = false;
+  public showDropdown: boolean[] = [ false, false ];
   public menuType = menuType;
 
   constructor() { }
@@ -19,8 +20,13 @@ export class TopBarComponent implements OnInit {
 
   @HostListener('document:click', ['$event.target']) public onClick(element: HTMLElement): void {
     if (!this.dropdownGameMenu?.nativeElement.contains(element))
-      this.showDropdown = false;
+      this.showDropdown[0] = false;
     else
-      this.showDropdown = true;
+      this.showDropdown[0] = true;
+
+    if (!this.dropdownSupportMenu?.nativeElement.contains(element))
+      this.showDropdown[1] = false;
+    else
+      this.showDropdown[1] = true;
   }
 }
