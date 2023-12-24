@@ -22,3 +22,15 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .browse {
+    .browse-games {
+      > ul {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 100px 100px 100px;
+      }
+    }
+  }
+}

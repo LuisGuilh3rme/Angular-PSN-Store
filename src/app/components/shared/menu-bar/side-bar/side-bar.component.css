@@ -43,3 +43,9 @@
 .activated {
   background-color: #EBEEF0;
 }
+
+@media (max-width: 500px) {
+  .side-bar-logo {
+    display: none;
+  }
+}
