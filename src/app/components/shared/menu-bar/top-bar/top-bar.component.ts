@@ -4,7 +4,7 @@ import { menuType } from 'src/enums/menu-type-enum';
 @Component({
   selector: 'app-top-bar',
   templateUrl: './top-bar.component.html',
-  styleUrls: ['./top-bar.component.css']
+  styleUrls: ['./top-bar.component.scss']
 })
 export class TopBarComponent implements OnInit {
   @ViewChild('dropdownGameMenu') private dropdownGameMenu?: ElementRef;

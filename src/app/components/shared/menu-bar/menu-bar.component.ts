@@ -3,7 +3,7 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
 @Component({
   selector: 'app-menu-bar',
   templateUrl: './menu-bar.component.html',
-  styleUrls: ['./menu-bar.component.css']
+  styleUrls: ['./menu-bar.component.scss']
 })
 export class MenuBarComponent implements OnInit {
   @ViewChild('fixedMenu') private fixedMenu?: ElementRef;

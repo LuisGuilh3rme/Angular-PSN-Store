@@ -5,7 +5,7 @@ import { GameDataInterface } from 'src/interfaces/game-data-interface';
 @Component({
   selector: 'app-game-card',
   templateUrl: './game-card.component.html',
-  styleUrls: ['./game-card.component.css']
+  styleUrls: ['./game-card.component.scss']
 })
 export class GameCardComponent implements OnInit {
   @Input() public gameId: number = 0;

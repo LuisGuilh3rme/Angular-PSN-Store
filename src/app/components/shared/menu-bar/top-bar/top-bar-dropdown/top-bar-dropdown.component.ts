@@ -7,7 +7,7 @@ import { MenuDataInterface } from 'src/interfaces/menu-data-interface';
 @Component({
   selector: 'app-top-bar-dropdown',
   templateUrl: './top-bar-dropdown.component.html',
-  styleUrls: ['./top-bar-dropdown.component.css']
+  styleUrls: ['./top-bar-dropdown.component.scss']
 })
 export class TopBarDropdownComponent implements OnInit {
   @Input() public menuItemType?: menuType;
