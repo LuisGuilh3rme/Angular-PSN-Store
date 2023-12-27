@@ -1,7 +1,7 @@
 <ng-container>
   <div class="top-bar-dropdown">
     <div class="top-bar-dropdown-items" *ngFor="let menuItem of menuItems">
-      <a class="top-bar-dropdown-item" [href]="menuItem.url">
+      <a class="top-bar-dropdown-item" (click)="linkRedirect(menuItem.url)">
         <img width="80" height="80" src="{{ menuItem.iconUrl }}" alt="{{ menuItem.title }} icon" />
         <span>{{ menuItem.title }}</span>
       </a>
